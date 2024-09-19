@@ -52,10 +52,7 @@ renderGifts()
 
 
 const renderGift = async (ID) => {
-
-    console.log(ID);
-    
-    const requestedID = ID 
+    const requestedID = parseInt(window.location.href.split("/").pop());
 
     const response = await fetch('/gifts')
     const data = await response.json()
@@ -81,12 +78,10 @@ const renderGift = async (ID) => {
 
 const requestedURL = window.location.href.split('/').pop()
 
-console.log(requestedURL);
-
-
-if (requestedURL) {
-   renderGift(requestedURL) 
-}
-else {
+renderGift()
+// if (requestedURL) {
+//    renderGift() 
+// }
+// else {
 //   window.location.href = '../404.html'
-}
+// }

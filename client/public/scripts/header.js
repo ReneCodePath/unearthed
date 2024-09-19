@@ -1,6 +1,6 @@
 // Left
 const headerLeft = document.createElement('div')
-headerLeft.classNamed = 'header-left'
+headerLeft.className = 'header-left'
 
 const headerLogo = document.createElement('img')
 headerLogo.src = '/logo.png'
@@ -15,7 +15,7 @@ headerLeft.appendChild(headerTitle)
 const headerRight = document.createElement('div')
 headerRight.className = 'header-right'
 
-const headerButton = document.createElement('Home')
+const headerButton = document.createElement('button')
 headerButton.textContent = 'Home'
     
 headerButton.addEventListener('click', function handleClick(event) {

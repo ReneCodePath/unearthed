@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:giftId', (req, res) => {
+  // console.log('gift ID route hit')
   res.status(200).sendFile(path.resolve(__dirname, '../public/gift.html'))
 })
 

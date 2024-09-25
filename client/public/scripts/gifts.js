@@ -80,8 +80,15 @@ const requestedURL = window.location.href.split('/').pop()
 
 renderGift()
 // if (requestedURL) {
-//    renderGift() 
+// //    renderGift() 
+//     console.log(requestedURL);
+    
 // }
 // else {
-//   window.location.href = '../404.html'
+//     console.log(requestedURL);
+    
+// //   window.location.href = '../404.html'
 // }
+
+
+// this is another dumb test

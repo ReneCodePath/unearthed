@@ -1,12 +1,18 @@
 import express from 'express'
 import giftsRouter from './routes/gifts.js'
+import cors from 'cors'
 
 const app = express()
 
 // Middleware
-app.use('/public', express.static('./public'))
-app.use('/scripts', express.static('./public/scripts'))
+/** Static Routest */
+// app.use('/public', express.static('./public'))
+// app.use('/scripts', express.static('./public/scripts'))
+app.use(cors())
 app.use('/gifts', giftsRouter)
+// app.use(cors({
+//   origin: 'http://localhost' 
+// }))
 
 
 // Routes

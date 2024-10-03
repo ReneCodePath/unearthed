@@ -5,7 +5,8 @@ const config = {
 	password: process.env.PGPASSWORD,
 	host: process.env.PGHOST,
 	port: process.env.PGPORT,
-	database: process.env.PGDATABASE
+	database: process.env.PGDATABASE,
+	connectionstring: process.env.CONN_STRING
 }
 const pool = new pg.Pool(config)
 
